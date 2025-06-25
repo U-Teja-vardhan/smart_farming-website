@@ -1,0 +1,126 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #dce35b, #45b649);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2f4f4f;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a.active {
+      color: #cccccc;
+    }
+
+    .left-sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 100vh;
+      background-color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .left-sidebar i {
+      color: #3f8c05;
+      margin: 20px 0;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .about-content {
+      margin-left: 80px;
+      padding: 40px;
+      max-width: 700px;
+      background-color: #ffffffcc;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    h2 {
+      color: #2f4f4f;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hi! 🌾 Welcome to Smart Farming</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="farmer_dashboard.html">Home</a></li>
+        <li><a href="Community.html">Community</a></li>
+        <li><a href="Shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" class="active">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <aside class="left-sidebar">
+    <i class="fa-solid fa-bell" title="Alerts"></i>
+    <i class="fa-solid fa-envelope" title="Inbox"></i>
+    <i class="fa-solid fa-user" title="User"></i>
+    <i class="fas fa-comment-alt" title="Chat"></i>
+    <i class="fa-solid fa-sign-hanging" title="Sign Out"></i>
+  </aside>
+
+  <div class="about-content">
+    <h2>About Our Project</h2>
+    <p>
+      Our mission is to bridge sustainable farming practices with modern AI technology. This platform enables farmers to monitor crop health, receive real-time suggestions, and optimize water and nutrient use through intelligent predictions.
+    </p>
+    <p>
+      Built by a passionate team of developers and agricultural enthusiasts, our system integrates IoT sensor data with machine learning models to automate outlier detection and decision-making.
+    </p>
+    <p>
+      We aim to empower both small-scale and commercial farmers by providing an accessible, data-driven dashboard that supports better crop yield, efficient resource use, and eco-friendly farming.
+    </p>
+    <p>
+      Whether you are a farmer or a customer interested in clean, tech-enabled agriculture — we welcome you to explore and grow with us.
+    </p>
+    <p>
+      Happy Farming!    
+    </p>
+  </div>
+
+</body>
+</html>

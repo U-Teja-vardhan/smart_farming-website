@@ -1,0 +1,198 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #dce35b, #45b649);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2f4f4f;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a.active {
+  color: #cccccc;
+}
+
+.left-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.left-sidebar i {
+  color: #3f8c05;
+  margin: 20px 0;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+main {
+  margin-left: 80px;
+  padding: 40px;
+}
+
+.login-container,
+.about-content,
+.shop-products,
+.farmer-list,
+.request-form{
+  background-color: #ffffffcc;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-container {
+    margin-left: 80px;
+    padding: 40px;
+    max-width: 500px;
+    background-color: #ffffffcc;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.community-feed {
+    background-color: #ffffffcc;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* DASHBOARD CONTENT */
+.content {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.sensor, .chat {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 40%;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.15);
+}
+
+.sensor img {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat textarea {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.chat button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat button:hover {
+  background-color: #218838;
+}
+h2 {
+  color: #2f4f4f;
+}
+
+li {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sensor, .chat {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 20px;
+  }
+}

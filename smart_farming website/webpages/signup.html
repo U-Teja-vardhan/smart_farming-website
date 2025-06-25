@@ -1,0 +1,27 @@
+<!-- signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Sign Up</h2>
+    <form id="signup-form">
+      <input type="text" id="username" placeholder="Username" required><br>
+      <input type="password" id="password" placeholder="Password" required><br>
+      <select id="role">
+        <option value="farmer">Farmer</option>
+        <option value="customer">Customer</option>
+      </select><br>
+      <input type="text" id="esp32_id" placeholder="ESP32 ID (for farmers only)"><br>
+      <button type="submit">Register</button>
+    </form>
+    <p><a href="WebsitePage.html">Back to Login</a></p>
+  </div>
+
+  <script src="static/signup.js"> </script>
+</body>
+</html>

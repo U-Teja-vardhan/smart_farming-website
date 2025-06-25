@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Farmer Dashboard</title>
+  <link rel="stylesheet" href="static/styles2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  
+</head>
+<body>
+
+  <header>
+    <h1>Welcome, Farmer 👨‍🌾</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="Community.html">Community</a></li>    
+        <li><a href="Shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <aside class="left-sidebar">
+    <i class="fa-solid fa-user" title="User"></i>
+    <i class="fa-solid fa-bell" title="Alerts"></i>
+    <i class="fa-solid fa-envelope" title="Inbox"></i>
+    <i class="fas fa-comment-alt" title="Chat"></i>
+    <i class="fa-solid fa-sign-hanging" title="Sign Out"></i>
+  </aside>
+
+  <div class="content">
+    <div class="sensor">
+      <h2>Live Sensor Plot</h2>
+      <img id="sensor-plot" src="http://localhost:8000/plot" alt="Sensor Plot" />
+    </div>
+
+    <div class="chat">
+      <h2>Crop Health Chatbot 🤖</h2>
+      <textarea id="chat-input" placeholder="Describe your crop issue..."></textarea>
+      <button onclick="sendToBot()">Ask AI</button>
+      <p><strong>Response:</strong></p>
+      <p id="bot-response" style="white-space: pre-wrap;"></p>
+    </div>
+  </div>
+
+  <script src="static/farmer_script.js"></script>
+</body>
+</html>

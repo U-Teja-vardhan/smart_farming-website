@@ -1,0 +1,55 @@
+<!-- customer.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Dashboard</title>
+  <link rel="stylesheet" href="static/styles3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <h1>Welcome Customer 🌿</h1>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Dashboard</a></li>
+    </ul>
+  </nav>
+</header>
+
+<aside class="left-sidebar">
+  <i class="fa-solid fa-user" title="Profile"></i>
+  <i class="fa-solid fa-envelope" title="Inbox"></i>
+  <i class="fa-solid fa-sign-hanging" title="Logout"></i>
+</aside>
+
+<main>
+  <section class="farmer-list">
+    <h2>Available Farmers</h2>
+    <div id="farmer-list">
+      <p>ID: 101, Name: Ramesh Kumar, crop:tomato</p>
+      <p>ID: 102, Name: Sunita Verma, crop:potato</p>
+      <p>ID: 103, Name: Anil Singh, crop:paddy</p>
+      <p>ID: 104, Name: Kavita Joshi, crop:potato</p>
+    </div>
+  </section>
+
+  <section class="request-form">
+    <h2>Send a Request</h2>
+    <form id="request-form">
+      <input type="number" id="farmer-id" placeholder="Farmer ID" required>
+      <input type="text" id="quantity" placeholder="Quantity" required>
+      <input type="text" id="price" placeholder="Price (₹)" required>
+      <input type="date" id="date" required>
+      <input type="hidden" id="customer-id" value="1"> 
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+</main>
+
+<script src="static/customer.js"></script>
+
+</body>
+</html>
